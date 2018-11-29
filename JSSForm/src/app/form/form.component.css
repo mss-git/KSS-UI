@@ -15,7 +15,9 @@ label {
     text-align: left;
     width:300px;
   }
-
+  a:link {
+    text-decoration: none;
+}
   select {
     display: inline-block;
     text-align: right;
@@ -41,14 +43,12 @@ td {
   border: 1px solid #dddddd;
 }
 
-.addButton {
-  background-color: lightgreen;
+Button {
+  background-color: darkblue;
+  color:white;
   float: right;
 }
-.saveButton {
-  background-color: lightgreen;
-  float: left;
-}
+
 .productivity {
   background-color: green;
   float: right;

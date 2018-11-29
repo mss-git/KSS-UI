@@ -9,7 +9,12 @@ label {
     text-align: left;
     width:300px;
   }
-
+  a {
+    color:white;
+  }
+  a:link {
+    text-decoration: none;
+}
 .container {
     margin: auto;
     padding: 10px;
@@ -30,11 +35,11 @@ td {
   border: 1px solid #dddddd;
 }
 
-.saveButton {
-  background-color: lightgreen;
+Button {
+  background-color: darkblue;
+  color:white;
   float: right;
 }
-
 .footer {
   position: absolute;
 }

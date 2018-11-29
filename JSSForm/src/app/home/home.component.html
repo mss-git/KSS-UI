@@ -1,9 +1,8 @@
-<header>
-        <img src="assets/images/JSS.png">
-</header>
 <div class = "image">
     <div class="container">
             <div class="col-md-6"> 
+                <img src="assets/images/JSS.png">
+                <br/>
                 <h1>PORTAL NAME </h1> 
                 <br/>
                 <form #form="ngForm"> 
@@ -22,13 +21,13 @@
                     <br>
         
                     <div class="submitButtons">
-                        <button class="button" (click)="login()"><a href="" [routerLink]="['/form']" class="nav-link">&nbsp;Login&nbsp;  </a></button>
+                        <button (click)="login()"><a href="" [routerLink]="['/form']" style= "color:white;" class="nav-link">&nbsp;Login&nbsp;  </a></button>
                         <br/>
                         <br/>
                         <br/>
                     </div>
                     <div class="submitButtons">
-                        <button class="button" (click)="clear()"><a href="" class="nav-link">&nbsp;Clear&nbsp;  </a></button>
+                        <button (click)="clear()"><a href="" style= "color:white;" class="nav-link">&nbsp;Clear&nbsp;  </a></button>
                     </div>
                 </form> 
             </div>
