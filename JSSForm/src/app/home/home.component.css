@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 
-
 .container {
     display:flex;
     align-items: center;
     justify-content: center;
+    color:white;
 }
 
 button {
@@ -32,7 +32,7 @@ a:link {
     /* background-image: url("https://wallpapertag.com/wallpaper/full/e/9/8/755704-amazing-pics-for-computer-background-1920x1200.jpg");
     background-size: cover;
     background-repeat: repeat; */
-    background-color:tan;
+    background-color:gray;
 }
 
 
