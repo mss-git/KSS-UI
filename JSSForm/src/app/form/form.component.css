@@ -23,11 +23,12 @@ label {
   }
 
   .background {
-    background-image: url("https://wallpapertag.com/wallpaper/full/e/9/8/755704-amazing-pics-for-computer-background-1920x1200.jpg");
-    background-size: cover;
+    /* background-image: url("https://wallpapertag.com/wallpaper/full/e/9/8/755704-amazing-pics-for-computer-background-1920x1200.jpg");
+    background-size: cover; */
+    background-color: tan;
   }
 
-.header {
+.tableHeader {
   background-color: lightblue;
 }
 td {
@@ -51,4 +52,7 @@ td {
 .productivity {
   background-color: green;
   float: right;
+}
+.footer {
+  position: absolute;
 }

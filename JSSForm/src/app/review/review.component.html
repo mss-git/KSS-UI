@@ -24,7 +24,7 @@
         <h3><b>Please Review and Submit the data for the Previous Month </b></h3>
         <div class="form-group">
             <table class = table>
-                <th class = "header" colspan=2> Safety Parameters </th>
+                <th class = "tableHeader" colspan=2> Safety Parameters </th>
                 <tr>
                     <td><label># of Lost Time Incidents for the month </label> </td>
                     <td><input type="text" class="form-control" required name="lostTimeIncidents" ngModel> </td> 
@@ -48,8 +48,8 @@
     
         <div class="form-group">
             <table class = "table">
-                <th class = "header" > Quality  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
-                <tr> <button class = "saveButton"> <a href="" [routerLink]="['/form']" class="nav-link">Edit</a></button> </tr>		 
+                <th class = "tableHeader" > Quality  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
+                <tr> <button class = "saveButton"> <a [routerLink]="['/form']" class="nav-link">Edit</a></button> </tr>		 
                 <!-- data table -->
                 <table class="dataTable">
                         <td>S.no</td>
@@ -75,9 +75,9 @@
 
             <div class="form-group">
                 <table class="table">
-                    <th class = "header" colspan=2> Productivity  </th>
+                    <th class = "tableHeader" colspan=2> Productivity  </th>
                     <tr> <b> On-Time Delivery &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b> </tr>
-                    <tr> <button class = "saveButton"> <a href="" [routerLink]="['/form']" class="nav-link">Edit</a></button> </tr>		 
+                    <tr> <button class = "saveButton"> <a [routerLink]="['/form']" class="nav-link">Edit</a></button> </tr>		 
                     <!-- data table -->
                     <table class="dataTable">
                             <td>S.No</td>
@@ -91,7 +91,7 @@
                         </table>
                 <br/>
                 <tr> <b> Premium Freight  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b></tr>
-                <tr> <button class = "saveButton"> <a href="" [routerLink]="['/form']" class="nav-link">Edit</a></button> </tr>	 
+                <tr> <button class = "saveButton"> <a [routerLink]="['/form']" class="nav-link">Edit</a></button> </tr>	 
                     <!-- data table -->
                         <table class="dataTable">
                             <td>S.No</td>
@@ -104,6 +104,7 @@
                             <td>Created Date</td>
                             <td>Last Updated Date</td>
                         </table>
+                    </table>
                         <!-- inputs -->
                 <tr>
                     <td> <label> COGS </label> </td>
@@ -117,18 +118,13 @@
                     <td> <label> Previous Month end inventory value in local currency </label> </td>
                     <td> <input type="text" class="form-control inputSize" required name="employeeHours" ngModel> </td>
                 </tr>
-
-                    <br/>
-            
-                </table>
-                <br/>
-                
+                    <br/>                
                 <button (ngSubmit)="onSubmit()">Submit</button>
             </div>
     </form>
+    <br/>
 </div>
     
-<footer>
-        <img src="assets/images/JSS.png">
+<footer class="footer">
         © 2018 Joyson Safety Systems. All Rights Reserved.
 </footer>
