@@ -1,19 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
 .container {
-    margin: auto;
-    width: 50%;
-    padding: 20px;
+    margin: 0 0 0 0;
+    width: inherit;
+    height: inherit;
     display:flex;
     align-items: center;
     justify-content: center;
-}
-
-img {
-    height: 150px;
-    width: 275px;
 }
 
 .submitButtons {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.image{
+    height: 100vh;
+    background-image: url("https://wallpapertag.com/wallpaper/full/e/9/8/755704-amazing-pics-for-computer-background-1920x1200.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+
 }

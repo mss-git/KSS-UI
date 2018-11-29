@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 label {
     display: inline-block;
     text-align: left;
@@ -16,10 +22,11 @@ label {
     width:300px;
   }
 
-  .container {
-    margin: auto;
-    padding: 10px;
-}
+  .background {
+    background-image: url("https://wallpapertag.com/wallpaper/full/e/9/8/755704-amazing-pics-for-computer-background-1920x1200.jpg");
+    background-size: cover;
+  }
+
 .header {
   background-color: lightblue;
 }

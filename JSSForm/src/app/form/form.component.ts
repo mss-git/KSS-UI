@@ -17,6 +17,7 @@ export class FormComponent implements OnInit {
   public show2: boolean = false;
   public show3: boolean = false;
 
+  objDate = Date.now();
   toggle1() {
     this.show1 = !this.show1;
   }

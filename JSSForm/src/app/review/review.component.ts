@@ -14,7 +14,7 @@ export class ReviewComponent implements OnInit {
   ngOnInit() {
   }
   onSubmit() {
-    
+    alert("Thanks for submitting!");
   }
 
 }
