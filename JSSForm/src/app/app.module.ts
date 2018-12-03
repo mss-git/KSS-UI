@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { FormComponent } from './form/form.component';
 import { ReviewComponent } from './review/review.component';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 export const routes : Routes = [
   { path: "", component: HomeComponent},
