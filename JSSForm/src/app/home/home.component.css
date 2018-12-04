@@ -25,15 +25,13 @@ a:link {
     justify-content: center;
 }
 
-
-
 .image{
     height: 100vh;
     width: 100%;
     /* background-image: url("https://wallpapertag.com/wallpaper/full/e/9/8/755704-amazing-pics-for-computer-background-1920x1200.jpg");
     background-size: cover;
     background-repeat: repeat; */
-    background-color:gray;
+    background-color:lightgray;
 }
 
 
