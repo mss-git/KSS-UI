@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule }  from '@angular/common';
-
 
 @Component({
   selector: 'app-history',
@@ -11,7 +9,7 @@ export class HistoricalComponent implements OnInit {
   months = [];
 
   constructor() {
-    this.months = ["AB", "AB/SB", "AB/INFLATOR", "AB/SB/SW"];
+    this.months = ["", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   }
   add() {
  
