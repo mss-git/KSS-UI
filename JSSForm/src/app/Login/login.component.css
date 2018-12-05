@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Arial, serif;
+}
+
+.container {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+
+button {
+    background-color: darkblue;
+}
+a:link {
+    text-decoration: none;
+}
+
+.submitButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image{
+    height: 100vh;
+    width: 100%;
+    /* background-image: url("https://wallpapertag.com/wallpaper/full/e/9/8/755704-amazing-pics-for-computer-background-1920x1200.jpg");
+    background-size: cover;
+    background-repeat: repeat; */
+    background-color:lightgray;
+}
+
+
+.footer {
+    position: absolute;
+  }

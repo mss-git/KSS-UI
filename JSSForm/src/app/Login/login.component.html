@@ -1,0 +1,43 @@
+<div class = "image">
+    <div class="container">
+            <div class="col-md-6"> 
+                <br/>
+                <br/>
+                <img src="assets/images/JSS.png">
+                <br/>
+                <h1>PORTAL NAME </h1> 
+                <br/>
+                <form #form="ngForm"> 
+                    <div class="form-group"> 
+                        <label for="email">Username:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <br/>
+                        <input type="email" class="form-control" id="email" name="email" [(ngModel)]="email" [value] = "searchValue"> 
+                    </div> 
+        
+                    <br>
+        
+                    <div class="form-group"> 
+                        <label for="pwd">Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> 
+                        <br/>
+                        <input type="password" class="form-control" id="pwd" name="password" [(ngModel)]="password" [value] = "searchValue">  
+                    </div> 
+        
+                    <br>
+        
+                    <div class="submitButtons">
+                        <button (click)="login()"><a href="" [routerLink]="['/history']" style= "color:white;" class="nav-link">&nbsp;Login&nbsp;  </a></button>
+                        <br/>
+                        <br/>
+                        <br/>
+                    </div>
+                    <div class="submitButtons">
+                        <button (click)="clear()"><a href="" style= "color:white;" class="nav-link">&nbsp;Clear&nbsp;  </a></button>
+                    </div>
+                </form> 
+            </div>
+        </div>
+    <br/>
+</div> 
+<footer class="footer">
+        © 2018 Joyson Safety Systems. All Rights Reserved.
+</footer>

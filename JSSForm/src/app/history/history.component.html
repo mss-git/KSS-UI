@@ -1,0 +1,42 @@
+<header>
+        <img src="assets/images/JSS.png">
+</header>
+<div class = "background">     
+    <form #form="ngForm" (ngSubmit)="onSubmit()">
+
+            <td> <label>Select a month </label> </td>
+            <td>
+                <select class="form-control">
+                    <option *ngFor="let month of months">
+                        {{ month }}
+                    </option>
+                </select>
+            </td>
+            <br/>
+            <div class="form-group">
+                <table class = "table">
+                    <th class = "tableHeader" > Quality  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
+                    
+                    <tr> <button (click)="add()">&nbsp;&nbsp;+ Add a product&nbsp;&nbsp;  </button>  </tr>	  
+                    <br/>
+                <!-- data table -->
+                <table class="dataTable">
+                        <td>Record Created</td>
+                        <td>Plant</td>
+                        <td>Region</td>
+                        <td><tr> <button (click)="edit()">&nbsp;&nbsp; edit &nbsp;&nbsp;  </button> </tr></td>
+                    </table>
+                <br/>
+                </table>
+            </div>
+             <br/>
+
+            <button class="submit"><a href="" [routerLink]="['/form']" class="nav-link" style= "color:white;">&nbsp;&nbsp;submit&nbsp;&nbsp;  </a></button>
+            <br/>
+    </form>
+    <br/>
+</div>
+<br/>
+<footer class="footer">
+        © 2018 Joyson Safety Systems. All Rights Reserved.
+</footer>

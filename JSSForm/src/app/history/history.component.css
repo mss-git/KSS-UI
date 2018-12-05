@@ -1,6 +1,10 @@
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Times New Roman", Arial, serif;
 }
+
 label {
     display: inline-block;
     text-align: left;
@@ -12,23 +16,25 @@ label {
     text-align: left;
     width:300px;
   }
-  a {
-    color:white;
-  }
   a:link {
     text-decoration: none;
 }
-.container {
-    margin: auto;
-    padding: 10px;
-    /* background-image: url("https://wallpapertag.com/wallpaper/full/e/9/8/755704-amazing-pics-for-computer-background-1920x1200.jpg"); */
+  select {
+    display: inline-block;
+    text-align: right;
+    width:300px;
+  }
+
+  .background {
+    /* background-image: url("https://wallpapertag.com/wallpaper/full/e/9/8/755704-amazing-pics-for-computer-background-1920x1200.jpg");
+    background-size: cover; */
     background-color: lightgray;
-}
+  }
+
 .tableHeader {
   background-color: darkblue;
   color: white;
 }
-
 td {
   width: auto;
 }
@@ -39,10 +45,20 @@ td {
   border: 2px solid blue;
 }
 
-
 Button {
   background-color: darkblue;
   color:white;
+  float: right;
+}
+
+.submit {
+  background-color: darkblue;
+  color:white;
+  float: left;
+}
+
+.productivity {
+  background-color: green;
   float: right;
 }
 .footer {
