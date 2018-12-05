@@ -39,11 +39,13 @@ td {
   border: 2px solid blue;
 }
 
+.editButton {
+  float:right;
+}
 
 Button {
   background-color: darkblue;
   color:white;
-  float: right;
 }
 .footer {
   position: absolute;

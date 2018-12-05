@@ -50,7 +50,6 @@
                     <th class = "tableHeader" > Quality  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
                     
                     <tr> <button (click)="toggle1()">&nbsp;&nbsp;+ Add a product&nbsp;&nbsp;  </button>  </tr>	  
-                    <tr> <button (click)="delete()">&nbsp;&nbsp; Delete &nbsp;&nbsp;  </button> </tr>
 
                     <div *ngIf="show1 === true">
                         <!-- drop downs -->
@@ -113,6 +112,10 @@
                                 <td> <input type="text" class="form-control inputSize" required name=""> </td>
                             </tr>
                             <tr>
+                                <td> <label> $ Total Amount Paid</label> </td>
+                                <td> <input type="text" class="form-control inputSize" required name=""> </td>
+                            </tr>
+                            <tr>
                                 <td> <label> # of Compliants </label> </td>
                                 <td> <input type="text" class="form-control inputSize" required name=""> </td>
                             </tr>
@@ -149,7 +152,6 @@
                 <table class="table">
                     <th class = "tableHeader" colspan=2> Productivity  </th>
                     <tr> <b> On-Time Delivery &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button (click)="toggle2()">&nbsp;&nbsp;+ Add a Record&nbsp;&nbsp;  </button> </b> </tr>
-                    <tr> <button (click)="delete()">&nbsp;&nbsp; Delete &nbsp;&nbsp;  </button> </tr>
                     <div *ngIf="show2 === true"> 
                     <!-- drop downs -->
                     <tr>
@@ -210,7 +212,6 @@
                         </table>
                     <br/>
                 <tr> <b> Premium Freight  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button (click)="toggle3()">&nbsp;&nbsp;+ Add a Record&nbsp;&nbsp;  </button> </b></tr>
-                <tr> <button (click)="delete()">&nbsp;&nbsp; Delete &nbsp;&nbsp;  </button> </tr>    
                     <div *ngIf="show3 === true">
                         <tr>
                             <td> <label>Select a Product </label> </td>

@@ -1,9 +1,10 @@
 <header>
         <img src="assets/images/JSS.png">
 </header>
-<div class = "background">     
-    <form #form="ngForm" (ngSubmit)="onSubmit()">
-
+<body class = "background">
+    <div>     
+        <form #form="ngForm" (ngSubmit)="onSubmit()">
+    
             <td> <label>Select a month </label> </td>
             <td>
                 <select class="form-control">
@@ -13,11 +14,12 @@
                 </select>
             </td>
             <br/>
+      
             <div class="form-group">
                 <table class = "table">
-                    <th class = "tableHeader" > Quality  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
-                    
-                    <tr> <button (click)="add()">&nbsp;&nbsp;+ Add a product&nbsp;&nbsp;  </button>  </tr>	  
+                    <th class = "tableHeader" > Historical  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
+                    <tr> <button (click)="add()"><a href="" [routerLink]="['/form']" class="nav-link" style= "color:white;"> &nbsp;&nbsp;+ Add a product&nbsp;&nbsp;  </a> </button>  </tr>
+                    	  
                     <br/>
                 <!-- data table -->
                 <table class="dataTable">
@@ -29,14 +31,14 @@
                 <br/>
                 </table>
             </div>
-             <br/>
-
-            <button class="submit"><a href="" [routerLink]="['/form']" class="nav-link" style= "color:white;">&nbsp;&nbsp;submit&nbsp;&nbsp;  </a></button>
             <br/>
-    </form>
-    <br/>
-</div>
-<br/>
+            
+            <br/>
+        </form>
+        <br/>
+        </div>
+        <br/>
+</body>
 <footer class="footer">
-        © 2018 Joyson Safety Systems. All Rights Reserved.
+    © 2018 Joyson Safety Systems. All Rights Reserved.
 </footer>
