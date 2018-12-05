@@ -53,28 +53,9 @@
 
                     <div *ngIf="show1 === true">
                         <!-- drop downs -->
-                        <tr>
-                                <td> <label>Select a Product </label> </td>
-                                <td>
-                                    <select class="form-control">
-                                        <option *ngFor="let type of productTypes">
-                                            {{ type }}
-                                        </option>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td> <label> Sub Product </label> </td>
-                                <td>
-                                    <select class="form-control">
-                                        <option *ngFor="let type of productTypes">
-                                            {{ type }}
-                                        </option>
-                                    </select>
-                                </td>
-                            </tr>
                             <tr>
                                 <td> <label>Customer/Supplier </label> </td>
+                                <!-- if customer, show customer names, else supplier names -->
                                 <td>
                                     <select class="form-control">
                                         <option *ngFor="let type of productTypes">
@@ -93,7 +74,28 @@
                                     </select>
                                 </td>
                             </tr>
-            
+                            <tr>
+                                <td> <label>Select a Product </label> </td>
+                                <!-- hide if supplier -->
+                                <td>
+                                    <select class="form-control">
+                                        <option *ngFor="let type of productTypes">
+                                            {{ type }}
+                                        </option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> <label> Sub Product </label> </td>
+                                <!-- hide if supplier -->
+                                <td>
+                                    <select class="form-control">
+                                        <option *ngFor="let type of productTypes">
+                                            {{ type }}
+                                        </option>
+                                    </select>
+                                </td>
+                            </tr>
                             <!-- inputs -->
                             <tr>
                                 <td> <label> Total Rejected Qty for the month </label> </td>
@@ -151,7 +153,7 @@
             <div class="form-group">
                 <table class="table">
                     <th class = "tableHeader" colspan=2> Productivity  </th>
-                    <tr> <b> On-Time Delivery &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button (click)="toggle2()">&nbsp;&nbsp;+ Add a Record&nbsp;&nbsp;  </button> </b> </tr>
+                    <tr style="text-align: center;"> <b> On-Time Delivery &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button (click)="toggle2()">&nbsp;&nbsp;+ Add a Record&nbsp;&nbsp;  </button> </b> </tr>
                     <div *ngIf="show2 === true"> 
                     <!-- drop downs -->
                     <tr>
@@ -174,7 +176,7 @@
                             </select>
                         </td>
                     </tr>
-                    <tr>
+                    <!-- <tr>
                         <td> <label>Customer/Supplier </label> </td>
                         <td>
                             <select class="form-control">
@@ -183,7 +185,7 @@
                                 </option>
                             </select>
                         </td>
-                    </tr>
+                    </tr> -->
                 
                         <!-- inputs -->
                     <tr>
@@ -191,6 +193,7 @@
                         <td> <input type="text" class="form-control inputSize" required name=""> </td>
                     </tr>
                     <tr>
+                        <!-- only when supplier chosen -->
                         <td> <label> Total Qty of Product Shipped for the month </label> </td>
                         <td> <input type="text" class="form-control inputSize" required name=""> </td>
                     </tr>
@@ -211,8 +214,9 @@
                             <td>Last Updated Date</td>
                         </table>
                     <br/>
-                <tr> <b> Premium Freight  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button (click)="toggle3()">&nbsp;&nbsp;+ Add a Record&nbsp;&nbsp;  </button> </b></tr>
+                <tr style="text-align: center;"> <b> Premium Freight  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button (click)="toggle3()">&nbsp;&nbsp;+ Add a Record&nbsp;&nbsp;  </button> </b></tr>
                     <div *ngIf="show3 === true">
+                        <h4><b> Premium Freight In </b></h4>
                         <tr>
                             <td> <label>Select a Product </label> </td>
                             <td>
@@ -224,7 +228,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td> <label> Sub Product </label> </td>
+                            <td> <label>Supplier Name </label> </td>
                             <td>
                                 <select class="form-control">
                                     <option *ngFor="let type of productTypes">
@@ -234,31 +238,32 @@
                             </td>
                         </tr>
                         <tr>
-                            <td> <label> Premium Freight In/Out </label> </td>
-                            <td>
-                                <select class="form-control">
-                                    <option *ngFor="let type of productTypes">
-                                        {{ type }}
-                                    </option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td> <label>Customer/Supplier Name </label> </td>
-                            <td>
-                                <select class="form-control">
-                                    <option *ngFor="let type of productTypes">
-                                        {{ type }}
-                                    </option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td> <label> $ Cost of premium freight for the month </label> </td>
+                            <td> <label> $ Cost of premium freight In </label> </td>
                             <td> <input type="text" class="form-control inputSize"> </td>
                         </tr>
+                        <h4> <b> Premium Freight Out </b></h4>
                         <tr>
-                            <td> <label> $ Revenue for the month </label> </td>
+                            <td> <label>Select a Product </label> </td>
+                            <td>
+                                <select class="form-control">
+                                    <option *ngFor="let type of productTypes">
+                                        {{ type }}
+                                    </option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> <label>Customer Name </label> </td>
+                            <td>
+                                <select class="form-control">
+                                    <option *ngFor="let type of productTypes">
+                                        {{ type }}
+                                    </option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> <label> $ Cost of premium freight Out </label> </td>
                             <td> <input type="text" class="form-control inputSize"> </td>
                         </tr>
                         <button class = "saveButton" (click)="toggle3()">&nbsp;&nbsp;Save&nbsp;&nbsp;  </button>
