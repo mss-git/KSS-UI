@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule }  from '@angular/common';
-
+import { Router  } from '@angular/router';
 
 @Component({
   selector: 'app-review',
@@ -9,12 +8,15 @@ import { CommonModule }  from '@angular/common';
 })
 export class ReviewComponent implements OnInit {
 
-  constructor() {
+  constructor(private router: Router) {
   }
   ngOnInit() {
   }
-  onSubmit() {
-    alert("Thanks for submitting!");
-  }
 
+  onSubmit(){
+      alert("Thanks for submitting!");
+      setTimeout(() => {
+        this.router.navigate(['/history']);
+      }, 2000);  
+    }
 }

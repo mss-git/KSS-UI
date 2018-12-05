@@ -1,5 +1,4 @@
-import { Routes, RouterModule} from '@angular/router';
-import { ModuleWithProviders } from '@angular/core';
+import { Routes} from '@angular/router';
 
 import { LoginComponent } from './Login/login.component';
 import { HistoricalComponent } from './history/History.component';
