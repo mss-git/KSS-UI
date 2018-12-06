@@ -49,7 +49,7 @@
                 <table class = "table">
                     <th class = "tableHeader" > Quality  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
                     
-                    <tr> <button (click)="toggle1()">&nbsp;&nbsp;+ Add a product&nbsp;&nbsp;  </button>  </tr>	  
+                    <tr> <button (click)="toggle('show1')">&nbsp;&nbsp;+ Add a product&nbsp;&nbsp;  </button>  </tr>	  
 
                     <div *ngIf="show1 === true">
                         <!-- drop downs -->
@@ -124,7 +124,7 @@
                                 <td> <input type="text" class="form-control inputSize" required name=""> </td>
                             </tr>
                             <br/>
-                            <button (click)="toggle1()">&nbsp;&nbsp;Save&nbsp;&nbsp;  </button>
+                            <button (click)="toggle('show1')">&nbsp;&nbsp;Save&nbsp;&nbsp;  </button>
                             
                         </div>
 
@@ -155,7 +155,7 @@
             <div class="form-group">
                 <table class="table">
                     <th class = "tableHeader" colspan=2> Productivity  </th>
-                    <tr style="text-align: center;"> <b> On-Time Delivery &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button (click)="toggle2()">&nbsp;&nbsp;+ Add a Record&nbsp;&nbsp;  </button> </b> </tr>
+                    <tr style="text-align: center;"> <b> On-Time Delivery &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button (click)="toggle('show2')">&nbsp;&nbsp;+ Add a Record&nbsp;&nbsp;  </button> </b> </tr>
                     <div *ngIf="show2 === true"> 
                     <!-- drop downs -->
                     <tr>
@@ -201,7 +201,7 @@
                                 <td> <input type="text" class="form-control inputSize" required name=""> </td>
                             </tr>
                     </div>
-                    <button (click)="toggle2()">&nbsp;&nbsp;Save&nbsp;&nbsp;  </button>
+                    <button (click)="toggle('show2')">&nbsp;&nbsp;Save&nbsp;&nbsp;  </button>
                     <br/>
 
                     </div>
@@ -218,7 +218,7 @@
                             <td>Last Updated Date</td>
                         </table>
                     <br/>
-                <tr style="text-align: center;"> <b> Premium Freight  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button (click)="toggle3()">&nbsp;&nbsp;+ Add a Record&nbsp;&nbsp;  </button> </b></tr>
+                <tr style="text-align: center;"> <b> Premium Freight  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button (click)="toggle('show3')">&nbsp;&nbsp;+ Add a Record&nbsp;&nbsp;  </button> </b></tr>
                     <div *ngIf="show3 === true">
                         <h4><b> Premium Freight In </b></h4>
                         <tr>
@@ -270,7 +270,7 @@
                             <td> <label> $ Cost of premium freight Out </label> </td>
                             <td> <input type="text" class="form-control inputSize"> </td>
                         </tr>
-                        <button class = "saveButton" (click)="toggle3()">&nbsp;&nbsp;Save&nbsp;&nbsp;  </button>
+                        <button class = "saveButton" (click)="toggle('show3')">&nbsp;&nbsp;Save&nbsp;&nbsp;  </button>
                     </div>
                 
                 <br/>
